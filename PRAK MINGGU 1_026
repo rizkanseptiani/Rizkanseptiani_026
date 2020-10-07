@@ -1,0 +1,43 @@
+/* Praktikum Minggu 1 */
+/* Membuat Program Billing Warnet */
+#include<cstdlib>
+#include<iostream>
+using namespace std;
+struct billing
+{
+char nama[30];
+};
+int main ()
+{
+billing bling;
+int menit;int jam;int detik;int w;
+int jmlW;
+int jmlJ;
+int jmlM;
+int jmlD;
+
+cout<<"---------------------------------------------"<<endl;
+cout<<"|                 ODADING.NET                   |"<<endl;
+cout<<"---------------------------------------------"<<endl;
+cout<<"Tarif Rp 5000,- per 1 jam"<<endl;
+cout<<"Masukkan Nama Kamu : ";cin.getline(bling.nama,30);
+cout<<"=========================="<<endl;
+cout<<"Lama Main \n";
+cout<<"Masukkan Jam   : ";cin>>jam;
+cout<<"Masukkan Menit : ";cin>>menit;
+cout<<"Masukkan Detik : ";cin>>detik;
+jmlJ=(jam*5000);
+jmlM=(menit*1250)/15;
+jmlD=(detik*42)/30;
+jmlW=jmlJ+jmlM+jmlD;
+cout<<"Anda Harus Membayar Sebesar : Rp."<<jmlW<<",-"<<endl;
+
+cout<<endl;
+cout<<"---------------------------------------------"<<endl;
+cout<<"================TEERIMA KASIH================"<<endl;
+cout<<"=====KAMI TUNGGU KEDATANGAN ANDA KEMBALI====="<<endl;
+cout<<"---------------------------------------------"<<endl;
+
+system("PAUSE");
+return 0;
+}
